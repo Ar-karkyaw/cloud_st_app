@@ -84,6 +84,9 @@ if st.session_state["done"]:
     prediction = model.predict(features)[0]
     st.metric("メンタルヘルス指数", prediction)
 
-    with st.expander("参考:モデルの特徴重要度", expanded=False):
+    with st.expander("参考:入力データ", expanded=False):
+        st.write(record)
+
+with st.expander("参考:モデルの特徴重要度", expanded=False):
         st.bar_chart(feature_importances.query("importance > 0"),
                     x="columns", y="importance", horizontal=True)
