@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-MODEL_PATH = "../assets/model2.pkl"
+MODEL_PATH = "./assets/model2.pkl"
 
 @st.cache_resource
 def load_model():
