@@ -2,3 +2,5 @@ requests
 scikit-learn==1.6.1
 pandas==2.3.2
 google-cloud-vision==3.10.2
+google-auth==2.40.3
+pydub==0.25.1
